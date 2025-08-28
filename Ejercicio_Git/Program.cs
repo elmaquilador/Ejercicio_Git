@@ -23,14 +23,8 @@ namespace Ejercicio_Git
                 Console.Write("Elige una opción: ");
                 opcion = Convert.ToInt32(Console.ReadLine());
 
-                Console.Clear();
-
-                Console.Write("Ingresa el número 1: ");
-                num1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Ingresa el número 2: ");
-                num2 = Convert.ToInt32(Console.ReadLine());
-
+               num1 = PedirNumeros(1);
+               num2 = PedirNumeros(2);
 
 
                 switch (opcion)
@@ -55,6 +49,16 @@ namespace Ejercicio_Git
                         break;
                 }
             } while (opcion != 4);
+        }
+
+        static double PedirNumeros (int indice)
+        {
+            Console.Clear();
+            
+            Console.Write($"Ingresa el número {indice}: ");
+            double num1 = Convert.ToInt32(Console.ReadLine());
+
+            return num1;
         }
 
         static double Suma (double num1, double num2)
