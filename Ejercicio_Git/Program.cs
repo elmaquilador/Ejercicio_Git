@@ -10,7 +10,7 @@ namespace Ejercicio_Git
     {
         static void Main(string[] args)
         {
-            double resultado, num1 = 10, num2 = 20;
+            double resultado, num1, num2;
             int opcion;
 
             do
@@ -22,6 +22,16 @@ namespace Ejercicio_Git
 
                 Console.Write("Elige una opción: ");
                 opcion = Convert.ToInt32(Console.ReadLine());
+
+                Console.Clear();
+
+                Console.Write("Ingresa el número 1: ");
+                num1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Ingresa el número 2: ");
+                num2 = Convert.ToInt32(Console.ReadLine());
+
+
 
                 switch (opcion)
                 {
